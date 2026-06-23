@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="additem.cpp" />
+    <ClCompile Include="MainReservation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LibrarySystem.h" />

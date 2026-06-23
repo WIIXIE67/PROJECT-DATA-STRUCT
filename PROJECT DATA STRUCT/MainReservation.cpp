@@ -8,31 +8,31 @@ using namespace std;
 // Function: main (Menu interaktif utama untuk pengguna)
 // ========================================================
 int main() {
-
+    // Mencipta objek sistem daripada kelas LibraryReservationSystem
     LibraryReservationSystem librarySystem;
 
     int choice;
     bool isRunning = true;
 
-
+    // Gelung utama untuk memastikan menu sentiasa dipaparkan sehingga pengguna keluar
     while (isRunning) {
         cout << "\n=========================================" << endl;
         cout << "   CAMPUS LIBRARY BOOK RESERVATION SYSTEM " << endl;
         cout << "=========================================" << endl;
-        cout << "1. Add New Reservation " << endl;
-        cout << "2. Display All Reservations " << endl;
-        cout << "3. Sort Reservations " << endl;
-        cout << "4. Search Reservation " << endl;
+        cout << "1. Add New Reservation (Pelanggan)" << endl;
+        cout << "2. Display All Reservations [Coming Soon]" << endl;
+        cout << "3. Sort Reservations [Coming Soon]" << endl;
+        cout << "4. Search Reservation [Coming Soon]" << endl;
         cout << "5. Exit System" << endl;
         cout << "=========================================" << endl;
         cout << "Masukkan pilihan anda (1-5): ";
         cin >> choice;
 
-
+        // Memproses pilihan input pengguna menggunakan switch-case
         switch (choice) {
         case 1:
-   
-            librarySystem.AdiputraAiman();
+            // Memanggil fungsi add item/reservation milik Adiputra Aiman
+            librarySystem.addReservation();
             break;
 
         case 2:

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="additem.cpp">
+    <ClCompile Include="addItem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MainReservation.cpp">

@@ -3,28 +3,19 @@
 
 using namespace std;
 
-// ========================================================
-// Programmer Name: Mohamad Adiputra Aiman
-// Function: Constructor (Mengawal pemulaan objek & indeks)
-// ========================================================
+// Programmer Name: Mohamad Adiputra Aiman bin Awang
 LibraryReservationSystem::LibraryReservationSystem() {
-    itemCount = 0; // Set jumlah buku asal kepada 0 semasa sistem bermula
+	itemCount = 0; // Set total reserved books to 0 when the system is initialized
 }
 
-// ========================================================
-// Programmer Name: Mohamad Adiputra Aiman
-// Function: Destructor (Kosong buat masa ini kerana array tiada memori dinamik)
-// ========================================================
+// Programmer Name: Mohamad Adiputra Aiman bin Awang
 LibraryReservationSystem::~LibraryReservationSystem() {
-    // Array diclear secara automatik apabila objek tamat skop
+	// Array cleared automatically when the object is destroyed, no need for manual cleanup
 }
 
-// ========================================================
-// Programmer Name: Mohamad Adiputra Aiman
-// Function: 1. Add Item (Menambah reservasi buku menggunakan Array)
-// ========================================================
+// Programmer Name: Mohamad Adiputra Aiman bin Awang
 void LibraryReservationSystem::addReservation() {
-    // Semak jika array sudah penuh sebelum meminta input
+	// Check if the array is full before adding a new reservation
     if (itemCount >= MAX_BOOKS) {
         cout << "\n[RALAT] Sistem Penuh! Tidak boleh menambah reservasi baharu." << endl;
         return;
@@ -37,7 +28,6 @@ void LibraryReservationSystem::addReservation() {
     cout << "   TAMBAH RESERVASI BUKU BAHARU (ARRAY)   " << endl;
     cout << "=========================================" << endl;
 
-    // Membersihkan buffer sebelum membaca rentetan teks
     cin.ignore();
     cout << "Masukkan Tajuk Buku            : ";
     getline(cin, bTitle);
@@ -51,13 +41,12 @@ void LibraryReservationSystem::addReservation() {
     cout << "Masukkan Tempoh Pinjaman (Hari): ";
     cin >> duration;
 
-    // Memasukkan data ke dalam elemen array pada indeks semasa (itemCount)
+	// Entering data into the reservationArray at the current itemCount index
     reservationArray[itemCount].bookTitle = bTitle;
     reservationArray[itemCount].authorName = bAuthor;
     reservationArray[itemCount].studentId = sId;
     reservationArray[itemCount].durationDays = duration;
 
-    // Naikkan nilai itemCount sebanyak +1 untuk persediaan buku seterusnya
     itemCount++;
 
     cout << "\n[BERJAYA] Reservasi untuk buku \"" << bTitle << "\" telah disimpan pada slot ke-" << itemCount << "." << endl;

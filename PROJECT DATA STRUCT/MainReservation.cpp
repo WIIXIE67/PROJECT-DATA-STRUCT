@@ -3,23 +3,21 @@
 
 using namespace std;
 
-// ========================================================
-// Programmer Name: Mohamad Adiputra Aiman
-// Function: main (Menu interaktif utama untuk pengguna)
-// ========================================================
+
+// Programmer Name: Mohamad Adiputra Aimanbin Awang
 int main() {
-    // Mencipta objek sistem daripada kelas LibraryReservationSystem
+    // Creating system object from LibraryReservationSystem class
     LibraryReservationSystem librarySystem;
 
     int choice;
     bool isRunning = true;
 
-    // Gelung utama untuk memastikan menu sentiasa dipaparkan sehingga pengguna keluar
+	// Main loop for menu to ensure menu always display until user choose to exit
     while (isRunning) {
         cout << "\n=========================================" << endl;
         cout << "   CAMPUS LIBRARY BOOK RESERVATION SYSTEM " << endl;
         cout << "=========================================" << endl;
-        cout << "1. Add New Reservation (Pelanggan)" << endl;
+        cout << "1. Add New Reservation " << endl;
         cout << "2. Display All Reservations [Coming Soon]" << endl;
         cout << "3. Sort Reservations [Coming Soon]" << endl;
         cout << "4. Search Reservation [Coming Soon]" << endl;
@@ -28,10 +26,10 @@ int main() {
         cout << "Masukkan pilihan anda (1-5): ";
         cin >> choice;
 
-        // Memproses pilihan input pengguna menggunakan switch-case
+        // Process user chose with switch-case
         switch (choice) {
         case 1:
-            // Memanggil fungsi add item/reservation milik Adiputra Aiman
+            // Call Function add item/reservation
             librarySystem.addReservation();
             break;
 
@@ -49,7 +47,7 @@ int main() {
 
         case 5:
             cout << "\nTerima kasih kerana menggunakan sistem perpustakaan kami. Selamat tinggal!" << endl;
-            isRunning = false; // Menamatkan gelung untuk keluar program
+			isRunning = false; // End loop to exit the program
             break;
 
         default:

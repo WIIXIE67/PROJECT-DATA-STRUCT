@@ -3,10 +3,10 @@
 #define LIBRARY_SYSTEM_H
 #include <string>
 
-// Maksimum kapasiti buku yang boleh disimpan dalam sistem array
+// Maximum number of books that can be reserved in the system
 const int MAX_BOOKS = 100;
 
-// Struktur data untuk memegang maklumat sebuah buku
+// Structure for holding book information
 struct Book {
     std::string bookTitle;
     std::string authorName;
@@ -14,18 +14,21 @@ struct Book {
     int durationDays;
 };
 
-// Kelas utama sistem menggunakan konsep Array
+// Main class for the library reservation system using Array concept
 class LibraryReservationSystem {
 private:
-    Book reservationArray[MAX_BOOKS]; // Array untuk menyimpan semua rekod buku
-    int itemCount;                    // Pembolehubah untuk menjejaki jumlah buku semasa
+	Book reservationArray[MAX_BOOKS]; // Array to store records of reserved books
+    int itemCount;                    // Variable to track the current number of reserved books
 
 public:
     LibraryReservationSystem();  // Constructor
     ~LibraryReservationSystem(); // Destructor
 
-    // Fungsi 1: Add Item menggunakan Array
+    // Function 1: Add Item using Array
     void addReservation();
+	void displayReservations(); // Function to display all reservations
+	void sortReservations();          // Function to sort reservations
+	void searchReservation();   // Function to search for a reservation
 };
 
 #endif

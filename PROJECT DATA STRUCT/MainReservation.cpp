@@ -38,7 +38,7 @@ int main() {
             break;
 
         case 3:
-            cout << "\n[INFO] Fungsi 'Sort' akan dikodkan oleh ahli kumpulan seterusnya." << endl;
+            librarySystem.sortReservations();
             break;
 
         case 4:

@@ -18,9 +18,9 @@ int main() {
         cout << "   CAMPUS LIBRARY BOOK RESERVATION SYSTEM " << endl;
         cout << "=========================================" << endl;
         cout << "1. Add New Reservation " << endl;
-        cout << "2. Display All Reservations [Coming Soon]" << endl;
-        cout << "3. Sort Reservations [Coming Soon]" << endl;
-        cout << "4. Search Reservation [Coming Soon]" << endl;
+        cout << "2. Display All Reservations " << endl;
+        cout << "3. Sort Reservations " << endl;
+        cout << "4. Search Reservation " << endl;
         cout << "5. Exit System" << endl;
         cout << "=========================================" << endl;
         cout << "Masukkan pilihan anda (1-5): ";

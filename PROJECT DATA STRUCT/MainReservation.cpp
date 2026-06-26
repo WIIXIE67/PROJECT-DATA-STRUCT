@@ -34,7 +34,7 @@ int main() {
             break;
 
         case 2:
-            librarySystem.searchReservations();
+            librarySystem.displayReservations();
             break;
 
         case 3:

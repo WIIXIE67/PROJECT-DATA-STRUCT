@@ -11,7 +11,7 @@ struct Book {
     std::string bookTitle;
     std::string authorName;
     std::string studentId;
-    int durationDays;
+    int durationDays = 0;
 };
 
 // Main class for the library reservation system using Array concept
@@ -28,7 +28,7 @@ public:
     void addReservation();
 	void displayReservations(); // Function to display all reservations
 	void sortReservations();    // Function to sort reservations
-	void searchReservation();   // Function to search for a reservation
+	void searchReservation() const;   // Function to search for a reservation
 };
 
 #endif

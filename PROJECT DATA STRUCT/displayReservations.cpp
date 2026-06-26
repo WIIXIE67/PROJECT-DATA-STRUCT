@@ -3,7 +3,7 @@
 using namespace std;
 
 // Programmer Name: Muhmammad Aiman Alif bin Zai Zi Pikri
-void LibraryReservationSystem::searchReservation()
+void LibraryReservationSystem::displayReservations()
 {
     // 1. Check if the array is empty first (Good practice, matching Zhi Hin's style)
     if (itemCount == 0)

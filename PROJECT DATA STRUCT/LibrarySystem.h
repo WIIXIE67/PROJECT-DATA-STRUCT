@@ -28,7 +28,7 @@ public:
     void addReservation();
 	void displayReservations(); // Function to display all reservations
 	void sortReservations();    // Function to sort reservations
-	void searchReservation() const;   // Function to search for a reservation
+	void searchReservation();   // Function to search for a reservation
 };
 
 #endif

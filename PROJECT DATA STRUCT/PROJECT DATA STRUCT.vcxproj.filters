@@ -21,10 +21,13 @@
     <ClCompile Include="sortReservation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="searchReservations.cpp">
+    <ClCompile Include="addReservation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="addReservation.cpp">
+    <ClCompile Include="searchReservation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="displayReservation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

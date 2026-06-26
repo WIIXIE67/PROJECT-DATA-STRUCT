@@ -23,7 +23,6 @@ void LibraryReservationSystem::addReservation() {
 
     string bTitle, bAuthor, sId;
     int duration;
-    while (true) {
         cout << "\n=========================================" << endl;
         cout << "   TAMBAH RESERVASI BUKU BAHARU (ARRAY)   " << endl;
         cout << "=========================================" << endl;
@@ -52,4 +51,3 @@ void LibraryReservationSystem::addReservation() {
         cout << "\n[BERJAYA] Reservasi untuk buku \"" << bTitle << "\" telah disimpan pada slot ke-" << itemCount << "." << endl;
         cout << "=========================================" << endl;
     }
-}

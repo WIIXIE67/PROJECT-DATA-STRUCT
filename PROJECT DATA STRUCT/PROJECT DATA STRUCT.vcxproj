@@ -140,7 +140,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="addItem.cpp" />
+    <ClCompile Include="displayReservations.cpp" />
     <ClCompile Include="MainReservation.cpp" />
+    <ClCompile Include="searchReservations.cpp" />
     <ClCompile Include="sortReservation.cpp" />
   </ItemGroup>
   <ItemGroup>

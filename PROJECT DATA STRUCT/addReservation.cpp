@@ -26,7 +26,6 @@ void LibraryReservationSystem::addReservation() {
         cout << "\n=========================================" << endl;
         cout << "   TAMBAH RESERVASI BUKU BAHARU (ARRAY)   " << endl;
         cout << "=========================================" << endl;
-        cout << "Tekan ctrl + Z untuk berrhenti." << endl;
         cin.ignore();
         cout << "Masukkan Tajuk Buku            : ";
         getline(cin, bTitle);

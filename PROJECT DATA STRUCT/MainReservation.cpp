@@ -34,7 +34,7 @@ int main() {
             break;
 
         case 2:
-            cout << "\n[INFO] Fungsi 'Display' akan dikodkan oleh ahli kumpulan seterusnya." << endl;
+            librarySystem.displayReservations();
             break;
 
         case 3:

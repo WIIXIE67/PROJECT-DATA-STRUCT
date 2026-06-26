@@ -24,6 +24,12 @@
     <ClCompile Include="sortReservation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="searchReservations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="addReservation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LibrarySystem.h">

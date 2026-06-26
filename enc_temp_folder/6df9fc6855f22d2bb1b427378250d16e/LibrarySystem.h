@@ -27,7 +27,7 @@ public:
     // Function 1: Add Item using Array
     void addReservation();
 	void displayReservations(); // Function to display all reservations
-	void sortReservations();    // Function to sort reservations
+	void sortReservations();          // Function to sort reservations
 	void searchReservation();   // Function to search for a reservation
 };
 

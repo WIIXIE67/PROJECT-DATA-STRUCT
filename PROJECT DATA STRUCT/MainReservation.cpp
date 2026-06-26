@@ -42,7 +42,7 @@ int main() {
             break;
 
         case 4:
-            cout << "\n[INFO] Fungsi 'Search' akan dikodkan oleh ahli kumpulan seterusnya." << endl;
+    		librarySystem.searchReservation();
             break;
 
         case 5:

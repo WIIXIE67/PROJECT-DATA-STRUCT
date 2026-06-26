@@ -139,7 +139,6 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="addItem.cpp" />
     <ClCompile Include="addReservation.cpp" />
     <ClCompile Include="MainReservation.cpp" />
     <ClCompile Include="searchReservations.cpp" />

@@ -39,6 +39,15 @@ void LibraryReservationSystem::addReservation() {
         cout << "Masukkan Tempoh Pinjaman (Hari): ";
         cin >> duration;
 
+        if (cin.fail()) {
+            cin.clear();
+            cin.ignore(1000, '\n');
+			cout << "\n[RALAT] Input tidak sah! Sila masukkan nombor untuk tempoh pinjaman." << endl;
+			cout << "Sila masukkan nombor sahaja untuk tempoh pinjaman." << endl;
+			cout << "=========================================" << endl;
+			return;
+        }
+
         // Entering data into the reservationArray at the current itemCount index
         reservationArray[itemCount].bookTitle = bTitle;
         reservationArray[itemCount].authorName = bAuthor;
